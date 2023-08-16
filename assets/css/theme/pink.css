@@ -1,0 +1,5 @@
+/* Pink Color Theme */
+.header .nav ul li a.active,
+.header .nav ul li a:hover {
+    color: #fb839e;
+}
