@@ -107,14 +107,21 @@ footer {
 /* Home Section CSS */
 .home-section {
     min-height: 100vh;
-    background-color: gray;
+    position: relative;
 }
 
 .home-section .slide {
     background-position: center;
     background-size: cover;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
 }
 
 .home-section .slide:before {
@@ -125,8 +132,71 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+.home-section .slide.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .home-section .row {
     min-height: 100vh;
+}
+
+.home-section .home-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.home-section .home-content p {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 0 15px;
+}
+
+.home-section .slide.active .home-content p {
+    opacity: 0;
+    animation: fadeInTop 1s ease forwards;
+}
+
+@keyframes fadeInTop {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.home-section .home-content h1 {
+    font-size: 80px;
+    color: #fff;
+    margin: 0;
+    font-weight: normal;
+    font-family: 'Great Vibes', cursive;
+}
+
+.home-section .slide.active .home-content h1 {
+    opacity: 0;
+    animation: fadeInTop 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.home-section .home-content span {
+    font-size: 20px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    color: #fff;
+    padding: 7px 30px;
+    margin: 15px 0 0;
+}
+
+.home-section .slide.active .home-content span {
+    opacity: 0;
+    animation: fadeInTop 1s ease forwards;
+    animation-delay: 1s;
 }
