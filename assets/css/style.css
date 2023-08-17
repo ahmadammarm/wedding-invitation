@@ -7,6 +7,7 @@ body {
     line-height: 1.5;
     font-size: 16px;
     font-weight: 400;
+    background-color: #f3f2f1;
 }
 
 *:not(i) {
@@ -55,6 +56,23 @@ footer {
 
 .align-items-center {
     align-items: center;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 45px;
+    color: #000;
+    font-weight: 700;
+    font-family: "Great Vibes", cursive;
+    letter-spacing: 2px;
+    margin: 0;
 }
 
 /* Header CSS */
@@ -199,4 +217,31 @@ footer {
     opacity: 0;
     animation: fadeInTop 1s ease forwards;
     animation-delay: 1s;
+}
+
+/* Couple Section CSS */
+.couple-section {
+    padding: 80px 0 80px;
+}
+
+.couple-section .couple {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0  60px;
+    text-align: center;
+}
+
+.couple-section .couple img {
+    max-width: 280px;
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid transparent;
+}
+
+.couple-section .couple h3 {
+    font-size: 40px;
+    margin: 15px 0;
+    font-family: 'Great Vibes', cursive;
+    font-weight: normal;
+    letter-spacing: 2px;
 }
