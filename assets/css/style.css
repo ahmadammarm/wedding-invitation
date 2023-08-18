@@ -229,6 +229,28 @@ footer {
     max-width: 50%;
     padding: 0  60px;
     text-align: center;
+    position: relative;
+}
+
+.couple-section .couple:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #cccccc;
+}
+
+.couple-section .couple i.fa-heart {
+    position: absolute;
+    left: -15px;
+    width: 31px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    top: 30%;
+    background-color: #f3f2f1;
 }
 
 .couple-section .couple img {
@@ -244,4 +266,35 @@ footer {
     font-family: 'Great Vibes', cursive;
     font-weight: normal;
     letter-spacing: 2px;
+}
+
+.couple-section .couple p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #555555;
+    margin: 0;
+}
+
+.couple-section .couple .social-icons {
+    padding-top: 30px;
+}
+
+.couple-section .couple .social-icons a {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.couple-section .couple .social-icons a i {
+    height: 32px;
+    width: 32px;
+    border: 1px solid transparent;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+.couple-section .couple .social-icons a:hover i {
+    color: #fff;
 }

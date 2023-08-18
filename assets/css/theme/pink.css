@@ -1,10 +1,17 @@
 /* Pink Color Theme */
 .couple-section .couple h3,
+.couple-section .couple .social-icons a i,
+.couple-section .couple i.fa-heart,
 .header .nav ul li a.active,
 .header .nav ul li a:hover {
     color: #fb839e;
 }
 
-.couple-section .couple img {
+.couple-section .couple img,
+.couple-section .couple .social-icons a i {
     border-color: #fb839e;
+}
+
+.couple-section .couple .social-icons a:hover i {
+    background-color: #fb839e;
 }
