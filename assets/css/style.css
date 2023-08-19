@@ -221,7 +221,7 @@ footer {
 
 /* Couple Section CSS */
 .couple-section {
-    padding: 80px 0 80px;
+    padding: 80px 0 0;
 }
 
 .couple-section .couple {
@@ -298,3 +298,95 @@ footer {
 .couple-section .couple .social-icons a:hover i {
     color: #fff;
 }
+
+/* Story Section CSS */
+.story-section {
+    padding: 80px 0 80px;
+}
+
+.story-section .story-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.story-section .story-content::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    background-color: #cccccc;
+}
+
+.story-section .story-item i {
+    position: absolute;
+    left: 50%;
+    width: 31px;
+    text-align: center;
+    padding: 5px;
+    margin-left: -15px;
+    top: 5px;
+    background-color: #f3f2f1;
+}
+
+.story-section .story-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+.story-section .story-item:last-child {
+    margin-bottom: 0;
+}
+.story-section .story-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.story-section .story-item:nth-child(odd) .story-text{
+    padding: 0 60px 0 15px;
+    text-align: right;
+}
+.story-section .story-item:nth-child(odd) .story-img {
+    padding: 0 15px 0 60px;
+}
+.story-section .story-item:nth-child(even) .story-text{
+    padding: 0 15px 0 60px;
+}
+.story-section .story-item:nth-child(even) .story-img {
+    padding: 0 60px 0 15px;
+}
+.story-section .story-text,
+.story-section .story-img {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.story-section .story-text h3 {
+    font-size: 25px;
+    margin: 0 0 8px;
+    color: #000;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.story-section .story-text span.date {
+    font-size: 15px;
+    font-weight: 700;
+    color: #555555;
+    margin: 0 0 15px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.story-section .story-text p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    color: #555555;
+}
+
+
