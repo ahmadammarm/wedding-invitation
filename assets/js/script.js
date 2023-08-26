@@ -16,3 +16,17 @@ $(window).on("load", function(){
     }
     slideShow();
 })
+
+$(document).ready(function(){
+    // Fixed Header
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $(".header").addClass("fixed");
+        }
+        else {
+            $(".header").removeClass("fixed");
+        }
+    })
+    // Scrollit function
+        $.scrollIt();
+})
