@@ -18,6 +18,26 @@ $(window).on("load", function(){
 })
 
 $(document).ready(function(){
+
+    // Navbar Toggle
+    $(".hamburger-btn").click(function(){
+        $(".header .nav").slideToggle();
+    });
+
+    $(".header .nav a").click(function(){
+        if($(window).width() < 768){
+            $(".header .nav").slideToggle();
+        }
+    });
+
+    // Hide navbar when clicking outside
+    $(document).click(function(event) {
+        var target = $(event.target);
+        if (!target.closest('.header').length) { // Jika target di luar area .header
+            $(".header .nav").slideUp(); // Sembunyikan navbar
+        }
+    });
+
     // Fixed Header
     $(window).scroll(function(){
         if($(this).scrollTop() > 100){
