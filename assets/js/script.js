@@ -28,5 +28,7 @@ $(document).ready(function(){
         }
     })
     // Scrollit function
-        $.scrollIt();
+        $.scrollIt({
+            topOffset: -50
+        });
 })
